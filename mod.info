@@ -1,0 +1,7 @@
+require=DylansTiles
+name=Demiurgo
+poster=poster.png
+id=Demiurgo
+description=Sii un demiurgo e costruisci qualsiasi cosa la tua immaginazione desideri.
+pack=la_resistenza_market
+tiledef=lrm_defs 427
