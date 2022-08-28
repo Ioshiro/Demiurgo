@@ -21,23 +21,35 @@ function ISToggleLight:stop()
 end
 
 function ISToggleLight:perform()
-  if isClient() then
-  --  local sq = self.lightSource:getSquare()
-  --  local args = {x = sq:getX(), y = sq:getY(), z = sq:getZ()}
-  --  sendClientCommand(self.character, 'object', 'toggleLight', args) -- toggleElectricLight old
-   DemiurgoClientCommands.addPole(self.lightSource:getSquare())
-   self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn())
-  else
-    DemiurgoClientCommands.addPole(self.lightSource:getSquare())
-    self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn())
+  print("aaaaaaaaaaaaaaaaaaaa")
+  if instanceof(lightsource, "IsoThumpable") then
+    if isClient() then
+    --  local sq = self.lightSource:getSquare()
+    --  local args = {x = sq:getX(), y = sq:getY(), z = sq:getZ()}
+    --  sendClientCommand(self.character, 'object', 'toggleLight', args) -- toggleElectricLight old
+      DemiurgoClientCommands.addPole(self.lightSource:getSquare())
+      self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn())
+    else
+      DemiurgoClientCommands.addPole(self.lightSource:getSquare())
+      self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn())
+    end
+    
+    
+    if self.lightSource:isLightSourceOn() then
+      self.lightSource:setSprite(modData["spriteOn"])
+    else
+      self.lightSource:setSprite(modData["spriteOff"])
+    end
   end
-  local modData = self.lightSource:getModData()
-  if self.lightSource:isLightSourceOn() then
-    self.lightSource:setSprite(modData["spriteOn"])
-  else
-    self.lightSource:setSprite(modData["spriteOff"])
+  if self.lightSource:getModData()['UV'] then
+    local modData = self.lightSource:getModData()
+    if self.lightSource:isActivated() then
+      self.lightSource:setSprite(modData["spriteOff"])
+    else
+      self.lightSource:setSprite(modData["spriteOn"])
+    end
+    self.lightSource:toggle()
   end
-
   ISBaseTimedAction.perform(self)
 end
 

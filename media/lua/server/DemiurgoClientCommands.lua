@@ -24,6 +24,10 @@ local getThumpableElectricLight = function(x, y, z)
           return o
         end
       end
+    elseif o and instanceof(o, 'IsoLightSwitch') then
+      if o:getModData()['UV'] then
+        return o
+      end
     end
   end
   return nil
@@ -35,6 +39,9 @@ BuildCommands.object.toggleElectricLight = function(player, args)
     if o:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) then
       o:toggleLightSource(not o:isLightSourceOn())
       o:sendObjectChange('lightSource')
+      if instanceof(o, 'IsoLightSwitch') then
+        o:setSprite(modData["spriteOn"])
+      end
     else
       o:toggleLightSource(false)
       o:sendObjectChange('lightSource')
