@@ -72,6 +72,12 @@ function DemiurgoClientCommands.addPole(square)
 end
 
 DemiurgoClientCommands.OnClientCommand = function(module, command, player, args)
+  if command == 'addUV' then
+		local gs = getCell():getGridSquare(args.x, args.y, args.z)
+		if gs then
+			SUVSystem.instance:addUV(gs)
+		end
+  end
   if BuildCommands[module] and BuildCommands[module][command] then
     local argStr = ''
     for k, v in pairs(args) do

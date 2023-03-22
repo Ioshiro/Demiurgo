@@ -1,6 +1,4 @@
---***********************************************************
---**                    ROBERT JOHNSON                     **
---***********************************************************
+require 'ISObjectClickHandler'
 
 ISLightSourceUV = ISBuildingObject:derive("ISLightSourceUV");
 
@@ -17,6 +15,12 @@ function ISLightSourceUV:create(x, y, z, north, sprite)
 	self.javaObject = IsoLightSwitch.new(cell, self.sq, getSprite(sprite), self.sq:getRoomID());
 	self.javaObject:addLightSourceFromSprite();
 	self.javaObject:setUseBattery(true);
+	self.javaObject:setHasBatteryRaw(true);
+	self.javaObject:setBulbItemRaw("Demiurgo.LightBulbUV")
+	self.javaObject:setPower(100)
+	self.javaObject:setDelta(0)
+	--self.javaObject:addLighBulb(self.character, "Demiurgo.LightBulbUV");
+	--self.javaObject:addLightSourceFromSprite()
     --obj:getCustomSettingsFromItem(_item);
 	--buildUtil.setInfo(self.javaObject, self);
 	--self.javaObject:setModData(copyTable(self.modData));
@@ -37,29 +41,13 @@ function ISLightSourceUV:create(x, y, z, north, sprite)
         local itemsOnGround = buildUtil.getMaterialOnGround(self.sq)
         baseItem = itemsOnGround[self.baseItem] and itemsOnGround[self.baseItem][1] or nil
     end
-	--self.javaObject:addLightSourceFromSprite()
-    --self.javaObject:createLightSource(self.radius, offsetX, offsetY, 0, 0, self.fuel, baseItem, self.character);
-
-	--    self.javaObject:setLifeDelta(0.000009);
-	-- to modify lightswitch to be usable with batteries:
-	-- lightswitch:setUseBattery(true);
-    -- set the remaining life to the light source
-    --self.javaObject:getLightSource():insertNewFuel(getPlayer():getIventory():FindAndReturn("Torch"), getPlayer());
-
 	buildUtil.consumeMaterial(self);
 	self.javaObject:getModData()["need:"..self.baseItem] = "1"
 	self.javaObject:getModData()["UV"] = true
-	self.javaObject:getModData()["spriteOff"] = "lrm_lights_0"
-	self.javaObject:getModData()["spriteOn"] = "lrm_lights_on_0"
-	-- the wooden wall have 100 base health + 100 per carpentry lvl
-	--self.javaObject:setMaxHealth(self:getHealth());
-	--self.javaObject:setHealth(self.javaObject:getMaxHealth());
-	-- the sound that will be played when our door frame will be broken
-	--self.javaObject:setBreakSound("BreakObject");
-	-- add the item to the ground
     self.sq:AddSpecialObject(self.javaObject);
+	self.javaObject:addToWorld();
 	self.javaObject:transmitCompleteItemToServer()
-
+	triggerEvent("OnObjectAdded", self.javaObject)
 end
 
 function ISLightSourceUV:new(sprite, northSprite, player)
@@ -98,3 +86,34 @@ end
 function ISLightSourceUV:getLightSource()
 	return self.javaObject:getLightSource()
 end
+
+
+local function OnPlayerUpdate(player)
+	local square = player:getCurrentSquare();
+	--local B = 0
+		--print("LIGHTPOST TOTAL B: ".. square.lighting)
+		--..", G: "..square:getLampostTotalG()..", R: ".. square:getLampostTotalR() );
+		--B = square:getLampostTotalB()
+	
+end
+
+-- Events.OnPlayerUpdate.Add(OnPlayerUpdate)
+
+
+
+
+function ISObjectClickHandler.doClickLightSwitch(object, playerNum, playerObj)
+	if false then
+		ISWorldObjectContextMenu.onToggleLight(nil, object, playerNum)
+		return true
+	end
+	local playerSq = playerObj:getCurrentSquare()
+	if object:getSquare():DistToProper(playerObj) >= 2 then return false end
+	if playerSq:isWallTo(object:getSquare()) then return false end
+	if object:getSprite():getProperties():Val("GroupName") == "UV" and object:hasLightBulb() then
+	  object:setSpriteFromName(GetOppositeSprite(object:getSprite():getName()))
+	  object:transmitUpdatedSpriteToServer();
+	end
+	object:toggle()
+	return true
+  end

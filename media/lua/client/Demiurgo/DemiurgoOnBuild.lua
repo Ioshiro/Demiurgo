@@ -219,7 +219,8 @@ DEMI.OnBuildLightSource = function(_, sprite, name, player, recipe, options)
 	else
 		obj = ISLightSource:new(sprite.sprite, sprite.sprite, getSpecificPlayer(player))
 	end
-
+    
+    --obj.javaObject:setLifeDelta(0.0000000009)
     DEMI.buildObject(obj, name, player, recipe, options)
 end
 
@@ -236,7 +237,6 @@ DEMI.OnBuildLightSourceUV = function(_, sprite, name, player, recipe, options)
 		end
 	else
 		obj = ISLightSourceUV:new(sprite.sprite, sprite.sprite, getSpecificPlayer(player))
-        if obj.lightSource then print("LIGHTSOURCEEEEEEEEEEEEE") else print("NOLIGHTSOURCEEEEEE") end
     end
 
 

@@ -1,0 +1,16 @@
+module Demiurgo{
+
+	imports
+	{
+		Base
+	}
+
+    sound Safeclicking
+	{
+		category = Player,
+		clip
+		{
+			file = media/sound/safeclicking.ogg,
+		}
+	}
+}

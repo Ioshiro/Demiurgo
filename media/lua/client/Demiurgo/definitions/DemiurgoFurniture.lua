@@ -2825,7 +2825,7 @@ function DEMI.InitFurnitureDefs()
                 offsetY = 0,
                 fuel = "Base.Battery",
                 baseItem = "Base.LightBulb",
-                radius = 10,
+                radius = 15,
                 modData = {
                     IsLighting = true
                 }
@@ -2847,7 +2847,7 @@ function DEMI.InitFurnitureDefs()
                 offsetY = 0,
                 fuel = "Base.Battery",
                 baseItem = "Base.LightBulb",
-                radius = 10,
+                radius = 15,
                 modData = {
                     IsLighting = true
                 }
@@ -2869,7 +2869,7 @@ function DEMI.InitFurnitureDefs()
                 offsetY = 0,
                 fuel = "Base.Battery",
                 baseItem = "Base.LightBulb",
-                radius = 10,
+                radius = 15,
                 modData = {
                     IsLighting = true
                 }
@@ -2889,7 +2889,7 @@ function DEMI.InitFurnitureDefs()
             options = {
                 offsetX = 5,
                 offsetY = 5,
-                radius = 15,
+                radius = 20,
                 fuel = "Base.Battery",
                 baseItem = "Base.LightBulb",
                 modData = {
@@ -2919,14 +2919,13 @@ function DEMI.InitFurnitureDefs()
                 radius = 10,
                 modData = {
                     IsLighting = true,
-                    UV = true,
-                    spriteOff = "lrm_lights_0",
-                    spriteOn = "lrm_lights_on_0"
+                    UV = true
                 }
             },
             desc = "Tecnologie futuristiche offerte da Pynoshi srl",
             sprite = {
-                sprite = "lrm_lights_0"
+                sprite = "la_resistenza_market_56",
+                northSprite = "la_resistenza_market_58"
             }
         }
     }
@@ -2984,13 +2983,77 @@ function DEMI.InitFurnitureDefs()
         data = {
             onBuild = DEMI.OnBuildLRMDoubleTileFurniture,
             recipe = DEMI.LRMRecipe,
-            
             desc = "Tecnologie futuristiche offerte da Pynoshi srl",
             sprite = {
                 sprite = "la_resistenza_market_7",
                 sprite2 = "la_resistenza_market_6",
                 northSprite = "la_resistenza_market_4",
                 northSprite2 = "la_resistenza_market_5"
+            }
+        }
+    }
+
+    DEMI.SafelockSmall = {
+        name = "Cassaforte Piccola",
+        data = {
+            onBuild = DEMI.OnBuildSimpleFurniture,
+            recipe = DEMI.SafelockSmallRecipe,
+            desc = "Cassaforte indistruttibile per tenere al sicuro i beni più preziosi",
+            options = {
+                isContainer = true,
+                renderFloorHelper = true,
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = false,
+                isThumpable = false,
+                isTableTop = true
+            },
+            sprite = {
+                sprite = "la_resistenza_market_40",
+                northSprite = "la_resistenza_market_41"
+            }
+        }
+    }
+
+    DEMI.SafelockMedium = {
+        name = "Cassaforte Media",
+        data = {
+            onBuild = DEMI.OnBuildWoodenContainer,
+            recipe = DEMI.SafelockMediumRecipe,
+            desc = "Cassaforte indistruttibile per tenere al sicuro i beni più preziosi",
+            options = {
+                isContainer = true,
+                renderFloorHelper = true,
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = false,
+                isThumpable = false
+            },
+            sprite = {
+                sprite = "la_resistenza_market_44",
+                northSprite = "la_resistenza_market_45"
+            }
+        }
+    }
+
+    DEMI.SafelockLarge = {
+        name = "Cassaforte Grande",
+        data = {
+            onBuild = DEMI.OnBuildWoodenContainer,
+            recipe = DEMI.SafelockLargeRecipe,
+            desc = "Cassaforte indistruttibile per tenere al sicuro i beni più preziosi",
+            options = {
+                isContainer = true,
+                renderFloorHelper = true,
+                canBeAlwaysPlaced = true,
+                blockAllTheSquare = true,
+                canBeLockedByPadlock = false,
+                isThumpable = false,
+                health = 99999999
+            },
+            sprite = {
+                sprite = "la_resistenza_market_48",
+                northSprite = "la_resistenza_market_49"
             }
         }
     }

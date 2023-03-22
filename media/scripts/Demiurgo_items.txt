@@ -3,6 +3,8 @@ module Demiurgo {
       Base
   }
 
+  /****************************** UV STUFF ******************************/ 
+
 	item LightBulbUV
 	{
 		DisplayCategory = Electronics,
@@ -31,108 +33,233 @@ module Demiurgo {
 		WorldStaticModel = Battery,
 	}
 
+	/****************************** MOVEABLES ******************************/ 
 		
-    	item Decoration1
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Decorazione,
-        	WorldObjectSprite	= la_resistenza_market_25,
-    	}
+	item Decoration1
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Decorazione,
+		WorldObjectSprite	= la_resistenza_market_25,
+	}
 
-    	item Decoration2
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Decorazione,
-        	WorldObjectSprite	= la_resistenza_market_27,
-    	}
+	item Decoration2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Decorazione,
+		WorldObjectSprite	= la_resistenza_market_27,
+	}
 
-    	item Sign
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Cartello,
-        	WorldObjectSprite	= la_resistenza_market_13,
-    	}
+	item Sign
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello,
+		WorldObjectSprite	= la_resistenza_market_13,
+	}
 
-    	item SignPve
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Cartello PVE,
-        	WorldObjectSprite	= la_resistenza_market_12,
-    	}
+	item SignPve
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello PVE,
+		WorldObjectSprite	= la_resistenza_market_12,
+	}
 
-    	item Flag
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Bandiera,
-        	WorldObjectSprite	= la_resistenza_market_8,
-    	}
+	item Flag
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Bandiera,
+		WorldObjectSprite	= la_resistenza_market_8,
+	}
 
-    	item Boxes
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Scatole,
-        	WorldObjectSprite	= la_resistenza_market_32,
-    	}
-
-
-    	item Boxes2
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Scatole,
-        	WorldObjectSprite	= la_resistenza_market_34,
-    	}
+	item Boxes
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Scatole,
+		WorldObjectSprite	= la_resistenza_market_32,
+	}
 
 
-    	item Boxes3
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Scatole,
-        	WorldObjectSprite	= la_resistenza_market_35,
-    	}
+	item Boxes2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Scatole,
+		WorldObjectSprite	= la_resistenza_market_34,
+	}
 
 
-    	item DoubleSign1
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Cartello doppio,
-        	WorldObjectSprite	= la_resistenza_market_10,
-    	}
+	item Boxes3
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Scatole,
+		WorldObjectSprite	= la_resistenza_market_35,
+	}
 
-    	item DoubleSign2
-    	{
-        	DisplayCategory = Furniture,
-        	Type			= Moveable,
-        	Icon			= default,
-        	Weight          	= 0.5,
-       	 	DisplayName		= Cartello doppio,
-        	WorldObjectSprite	= la_resistenza_market_11,
-    	}
 
+	item DoubleSign1
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello doppio,
+		WorldObjectSprite	= la_resistenza_market_10,
+	}
+
+	item DoubleSign2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello doppio,
+		WorldObjectSprite	= la_resistenza_market_11,
+	}
+
+
+	item Graffiti1
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Graffito pinoso,
+		WorldObjectSprite	= la_resistenza_market_52,
+	}
+
+	item Graffiti12
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Graffito pinoso2,
+		WorldObjectSprite	= la_resistenza_market_53,
+	}
+
+
+	item Graffiti2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Graffito pinosissimo,
+		WorldObjectSprite	= la_resistenza_market_60,
+	}
+
+
+	item Graffiti3
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Graffito pinerrimo,
+		WorldObjectSprite	= la_resistenza_market_62,
+	}
+
+
+	item Graffiti4
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Graffito pinaccioso,
+		WorldObjectSprite	= la_resistenza_market_63,
+	}
+
+	
+    item Generator
+    {
+        DisplayCategory = Electronics,
+        Weight	=	400,
+        Type	=	Normal,
+        DisplayName	=	Generator,
+        Icon	=	Generator,
+        Tooltip = Tooltip_Generator,
+		RequiresEquippedBothHands = true,
+		MetalValue = 500,
+        ConditionMax = 100,
+        Tags = HeavyItem,
+    }
+
+		item RadioPesante
+	{
+	    DisplayCategory = Communications,
+		Type			= Radio,
+		Icon			= HamRadioMilitary,
+		Weight          	= 100.0,
+		ConditionMax	= 100,
+
+		DisplayName		= Radio Speciale,
+        
+		UseDelta		= 0.014, 
+		UseWhileEquipped	= FALSE,
+		DisappearOnUse		= FALSE,
+		TwoWay			= TRUE,
+		TransmitRange		= 20000,
+		MicRange		= 5,
+		BaseVolumeRange		= 15,
+		IsPortable		= FALSE,
+		IsTelevision		= FALSE,
+		MinChannel		= 200,
+		MaxChannel		= 1000000,
+		UsesBattery		= TRUE,
+		IsHighTier		= TRUE,
+		WorldObjectSprite	= la_resistenza_market_special_13,
+		Tooltip = Tooltip_item_Radio,
+	}
+
+	
+	item CassaforteS
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 100,
+		DisplayName		= Cassaforte Piccola,
+		WorldObjectSprite	= la_resistenza_market_special_0,
+	}
+		item CassaforteM
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 100,
+		DisplayName		= Cassaforte Media,
+		WorldObjectSprite	= la_resistenza_market_special_4,
+	}
+		item CassaforteL
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 100,
+		DisplayName		= Cassaforte Grande,
+		WorldObjectSprite	= la_resistenza_market_special_8,
+	}
 }

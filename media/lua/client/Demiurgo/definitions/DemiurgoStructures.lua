@@ -13,7 +13,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 canBarricade = false,
-                isThumpable = false
+                isThumpable = true
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -29,7 +29,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 hoppable = true,
-                isThumpable = false,
+                isThumpable = true,
                 canBarricade = true,
                 modData = {
                     wallType = "windowsframe"
@@ -85,7 +85,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 canBarricade = false,
-                isThumpable = false
+                isThumpable = true
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -101,7 +101,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 hoppable = true,
-                isThumpable = false,
+                isThumpable = true,
                 canBarricade = true,
                 modData = {
                     wallType = "windowsframe"
@@ -138,7 +138,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 canBarricade = false,
-                isThumpable = false
+                isThumpable = true
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -154,7 +154,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 hoppable = true,
-                isThumpable = false,
+                isThumpable = true,
                 canBarricade = true,
                 modData = {
                     wallType = "windowsframe"
@@ -191,7 +191,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 canBarricade = false,
-                isThumpable = false
+                isThumpable = true
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -207,7 +207,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 hoppable = true,
-                isThumpable = false,
+                isThumpable = true,
                 canBarricade = true,
                 modData = {
                     wallType = "windowsframe"
@@ -244,7 +244,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 canBarricade = false,
-                isThumpable = false
+                isThumpable = true
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -260,7 +260,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 hoppable = true,
-                isThumpable = false,
+                isThumpable = true,
                 canBarricade = true,
                 modData = {
                     wallType = "windowsframe"
@@ -297,7 +297,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 canBarricade = false,
-                isThumpable = false
+                isThumpable = true
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -313,7 +313,7 @@ function DEMI.InitStructureDefs()
             recipe = DEMI.WoodenWallRecipe,
             options = {
                 hoppable = false,
-                isThumpable = false,
+                isThumpable = true,
             },
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -343,7 +343,7 @@ function DEMI.InitStructureDefs()
         name = "Grata di Sicurezza",
         data = {
             onBuild = DEMI.OnBuildWoodenWall,
-            recipe = DEMI.WoodenWallRecipe,
+            recipe = DEMI.MetalBarFenceRecipe,
             options = {
                 canBarricade = false,
                 isThumpable = false
@@ -464,7 +464,7 @@ DEMI.WallWhiteBathroom = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -480,7 +480,7 @@ DEMI.WallTanBathroom = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -496,7 +496,7 @@ DEMI.WallGrayBathroom = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -512,7 +512,7 @@ DEMI.WallGrayStripes = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -528,7 +528,7 @@ DEMI.WallTanStripes = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -544,7 +544,7 @@ DEMI.WallBlueStripes = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -560,7 +560,7 @@ DEMI.WallGrayDiamonds = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -576,7 +576,7 @@ DEMI.WallGrayFlowers = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -592,7 +592,7 @@ DEMI.WallPinkFlowers = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -761,7 +761,7 @@ DEMI.WindowFrameWhiteBathroom = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -781,7 +781,7 @@ DEMI.WindowFrameTanBathroom = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -801,7 +801,7 @@ DEMI.WindowFrameGrayBathroom = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -821,7 +821,7 @@ DEMI.WindowFrameGrayStripes = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -841,7 +841,7 @@ DEMI.WindowFrameTanStripes = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -861,7 +861,7 @@ DEMI.WindowFrameBlueStripes = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -881,7 +881,7 @@ DEMI.WindowFrameGrayDiamonds = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -901,7 +901,7 @@ DEMI.WindowFrameGrayFlowers = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -921,7 +921,7 @@ DEMI.WindowFramePinkFlowers = {
         recipe = DEMI.WoodenWindowFrameRecipe,
         options = {
             hoppable = true,
-            isThumpable = false,
+            isThumpable = true,
             canBarricade = true,
             modData = {
                 wallType = "windowsframe"
@@ -1115,7 +1115,7 @@ DEMI.WallStrawberry = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1132,7 +1132,7 @@ DEMI.WallBlueGray = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1149,7 +1149,7 @@ DEMI.WallLeafGreen = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1166,7 +1166,7 @@ DEMI.WallDeepRed = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1183,7 +1183,7 @@ DEMI.WallGreen = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1200,7 +1200,7 @@ DEMI.WallTan = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1217,7 +1217,7 @@ DEMI.WallMintGreen = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1234,7 +1234,7 @@ DEMI.WallLightBlue = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1251,7 +1251,7 @@ DEMI.WallOrange = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1268,7 +1268,7 @@ DEMI.WallBrown = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1285,7 +1285,7 @@ DEMI.WallBlue = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1302,7 +1302,7 @@ DEMI.WallOffTan = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1319,7 +1319,7 @@ DEMI.WallCream = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1336,7 +1336,7 @@ DEMI.WallPaleBlue = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1353,7 +1353,7 @@ DEMI.WallPurple = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1370,7 +1370,7 @@ DEMI.WallWhite = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1387,7 +1387,7 @@ DEMI.WallBlack = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1404,7 +1404,7 @@ DEMI.WallLightPurple = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1421,7 +1421,7 @@ DEMI.WallPink = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -1438,7 +1438,7 @@ DEMI.WallCerulean = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2636,7 +2636,7 @@ DEMI.WallBrickBlue = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2652,7 +2652,7 @@ DEMI.WallBrickRed = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2669,7 +2669,7 @@ DEMI.WallBrickTan = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2686,7 +2686,7 @@ DEMI.WallBrickOld = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2703,7 +2703,7 @@ DEMI.WallBrickGray = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2720,7 +2720,7 @@ DEMI.WallBrickBeige = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2737,7 +2737,7 @@ DEMI.WallBrickLight = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -2754,7 +2754,7 @@ DEMI.WallBrickGreen = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3245,7 +3245,7 @@ DEMI.WallStoneGray = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3262,7 +3262,7 @@ DEMI.WallStoneTan = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3279,7 +3279,7 @@ DEMI.WallStoneRed = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3296,7 +3296,7 @@ DEMI.WallStoneGreen = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3313,7 +3313,7 @@ DEMI.WallStoneBrown = {
         recipe = DEMI.StoneWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3626,7 +3626,7 @@ DEMI.WallBlockTan = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3642,7 +3642,7 @@ DEMI.WallBlockDarkGray = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3658,7 +3658,7 @@ DEMI.WallBlockLightGray = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3674,7 +3674,7 @@ DEMI.WallBlockWhite = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3690,7 +3690,7 @@ DEMI.WallBlockBrown = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -3989,7 +3989,7 @@ DEMI.WallWoodenWhiteClapboard = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4006,7 +4006,7 @@ DEMI.WallWoodenBrownClapboard = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4023,7 +4023,7 @@ DEMI.WallWoodenBlueClapboard = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4040,7 +4040,7 @@ DEMI.WallWoodenTanClapboard = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4057,7 +4057,7 @@ DEMI.WallWoodenPinkClapboard = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4074,7 +4074,7 @@ DEMI.WallWoodenGreenClapboard = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4091,7 +4091,7 @@ DEMI.WallWoodenLightBrownPanel = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4109,7 +4109,7 @@ DEMI.WallWoodenBrownPanel = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4127,7 +4127,7 @@ DEMI.WallWoodenGrayPanel = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4145,7 +4145,7 @@ DEMI.WallWoodenWhitePanel = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -4163,7 +4163,7 @@ DEMI.WallWoodenRedBarn = {
         recipe = DEMI.WoodenWallRecipe,
         options = {
             canBarricade = false,
-            isThumpable = false
+            isThumpable = true
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -6663,7 +6663,7 @@ DEMI.FenceHBarrier = {
         onBuild = DEMI.OnBuildSimpleFurniture,
         recipe = DEMI.HBarrierRecipe,
         options = {
-            isThumpable = true
+            isThumpable = false
         },
         desc = "Non disassemblabile, non rimborsabile",
         sprite = {
@@ -6779,7 +6779,7 @@ DEMI.FenceWiredRazor = {
         recipe = DEMI.UnhoppableHighMetalFenceRecipe,
         options = {
             isThumpable = true,
-			hoppable = true,
+			hoppable = false,
             blockAllTheSquare = false,
             completionSound = "BuildMetalStructureMedium"
         },

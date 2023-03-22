@@ -19,7 +19,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 4
         }}
     }
 
@@ -27,17 +27,17 @@ function DEMIInitRecipes()
         tools = {"Hammer"},
         materials = {{
             Material = "Base.Stone",
-            Amount = 2
+            Amount = 3
 		},	{
             Material = "Base.Nails",
-            Amount = 10
+            Amount = 8
         }, {
             Material = "Base.Money",
             Amount = 1
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 4
      
         }}
 
@@ -57,7 +57,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 7
+            Amount = 4
         }}
     }
 
@@ -76,7 +76,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 7
+            Amount = 5
         }}
     }
 
@@ -91,7 +91,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 7
+            Amount = 4
         }}
     }
 
@@ -106,7 +106,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -130,7 +130,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 7
+            Amount = 4
         },{
       
               Skill = "Tailoring",
@@ -318,25 +318,25 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
         }}
     }
 
     DEMI.StoneDoorFrameRecipe = {
         tools = {"Hammer"},
         materials = {{
-            Material = "Base.Plank",
-            Amount = 3
+            Material = "Base.Stone",
+            Amount = 2
         }, {
             Material = "Base.Nails",
-            Amount = 6
+            Amount = 8
         }, {
             Material = "Base.Money",
             Amount = 1
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
         }}
     }
 
@@ -354,7 +354,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
         }}
     }
 
@@ -378,7 +378,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
       
        }}
     }
@@ -403,7 +403,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
         }}
     }
 
@@ -428,7 +428,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
         }}
     }
 
@@ -458,10 +458,10 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 5
 			},{
             Skill = "MetalWelding",
-            Amount = 6
+            Amount = 4
         }}
     }
 
@@ -479,7 +479,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 7
+            Amount = 4
         }}
     }
 
@@ -494,14 +494,14 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
     DEMI.StoneFencePostRecipe = {
         tools = {"Hammer"},
         materials = {{
-            Material = "Base.Plank",
+            Material = "Base.Stone",
             Amount = 2
         }, {
             Material = "Base.Nails",
@@ -509,7 +509,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -524,7 +524,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -539,14 +539,14 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
     DEMI.StoneFenceRecipe = {
         tools = {"Hammer"},
         materials = {{
-            Material = "Base.Plank",
+            Material = "Base.Stone",
             Amount = 2
         }, {
             Material = "Base.Nails",
@@ -554,7 +554,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -569,7 +569,25 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
+        }}
+    }
+
+    DEMI.MetalBarFenceRecipe = {
+        tools = {"Hammer"},
+        materials = {{
+            Material = "Base.MetalBar",
+            Amount = 3
+        }, {
+            Material = "Base.Screws",
+            Amount = 10
+        },{
+            Material = "Base.Money",
+            Amount = 1
+        }},
+        skills = {{
+            Skill = "Woodwork",
+            Amount = 4
         }}
     }
 
@@ -588,7 +606,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -683,11 +701,11 @@ function DEMIInitRecipes()
         tools = {"Hammer"},
         materials = {{
             Material = "Base.Plank",
-            Amount = 5
+            Amount = 10
         }, {
             Material = "Base.Nails",
-            Amount = 10
-        }, },
+            Amount = 15
+        }},
         skills = {{
             Skill = "Woodwork",
             Amount = 5
@@ -724,7 +742,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 3
         }}
     }
 
@@ -739,7 +757,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 3
         }}
     }
 
@@ -765,7 +783,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Farming",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -808,6 +826,9 @@ function DEMIInitRecipes()
             Material = "Radio.ElectricWire",
             Amount = 1
         }, {
+            Material = "Demiurgo.LightBulbUV",
+            Amount = 1
+        }, {
             Material = "Base.ElectronicsScrap",
             Amount = 5
         }},
@@ -816,7 +837,7 @@ function DEMIInitRecipes()
             Amount = 2
         }, {
             Skill = "Electricity",
-            Amount = 2
+            Amount = 3
         }}
     }
 
@@ -858,7 +879,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -873,7 +894,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -888,7 +909,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 4
         }}
     }
 
@@ -903,7 +924,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -918,7 +939,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -933,7 +954,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 5
+            Amount = 4
         }}
     }
 
@@ -948,7 +969,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 8
+            Amount = 6
         }}
     }
 
@@ -963,7 +984,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 8
+            Amount = 6
         }}
     }
 
@@ -973,8 +994,11 @@ function DEMIInitRecipes()
             Material = "Base.Plank",
             Amount = 4
         }, {
+            Material = "LabItems.MatShatteredGlass",
+            Amount = 2
+        }, {
             Material = "Base.Screws",
-            Amount = 8
+            Amount = 6
         }},
         skills = {{
             Skill = "Woodwork",
@@ -1035,7 +1059,7 @@ function DEMIInitRecipes()
         tools = {"Hammer"},
         materials = {{
             Material = "Base.Stone",
-            Amount = 10
+            Amount = 2
         }, {
             Material = "Base.Nails",
             Amount = 4
@@ -1045,7 +1069,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 4
      
         }}
     }
@@ -1077,21 +1101,116 @@ function DEMIInitRecipes()
         }}}
 	
 
-    DEMI.LRMRecipe = {
-        tools = {"Hammer"},
-        materials = {{
-            Material = "Base.Stone",
-            Amount = 999
-        }, {
-            Material = "Base.Nails",
-            Amount = 999
-        }, {
-            Material = "Base.Money",
-            Amount = 999
-        }},
-        skills = {{
-            Skill = "Woodwork",
-            Amount = 10
-        }}
-    }
+        DEMI.LRMRecipe = {
+            tools = {"Hammer"},
+            materials = {{
+                Material = "Base.Stone",
+                Amount = 999
+            }, {
+                Material = "Base.Nails",
+                Amount = 999
+            }, {
+                Material = "Base.Money",
+                Amount = 999
+            }},
+            skills = {{
+                Skill = "Woodwork",
+                Amount = 10
+            }}
+        }
+
+        DEMI.SafelockSmallRecipe = {
+            tools = {"Screwdriver"},
+            materials = {{
+			       Material = "Base.CombinationPadlock",
+                Amount = 1
+            }, {
+                Material = "Base.SmallSheetMetal",
+                Amount = 2
+            }, {
+			     Material = "Base.SheetMetal",
+                Amount = 1
+            }, {
+                Material = "Base.Screws",
+                Amount = 10
+            }, {
+                Material = "Base.Money",
+                Amount = 250
+            }, {
+                Material = "Base.BlowTorch",
+                Amount = 0,
+                Uses = 2
+            }},
+            skills = {{
+                Skill = "MetalWelding",
+                Amount = 1
+					}, {
+				Skill = "Electricity",
+                Amount = 1
+            }}
+        }
+
+        DEMI.SafelockMediumRecipe = {
+            tools = {"Screwdriver"},
+            materials = {{
+			       Material = "Base.CombinationPadlock",
+                Amount = 1
+            }, {
+                Material = "Base.SmallSheetMetal",
+                Amount = 2
+            }, {
+			     Material = "Base.SheetMetal",
+                Amount = 2
+            }, {
+                Material = "Base.Screws",
+                Amount = 20
+            }, {
+                Material = "Base.Money",
+                Amount = 500
+            }, {
+                Material = "Base.BlowTorch",
+                Amount = 0,
+                Uses = 5
+            }},
+            skills = {{
+			
+                Skill = "MetalWelding",
+                Amount = 2
+					}, {
+				Skill = "Electricity",
+                Amount = 2
+            }}
+        }
+
+        DEMI.SafelockLargeRecipe = {
+            tools = {"Screwdriver"},
+            materials = {{
+			       Material = "Base.CombinationPadlock",
+                Amount = 1
+            }, {
+                Material = "Base.SmallSheetMetal",
+                Amount = 4
+            }, {
+			     Material = "Base.SheetMetal",
+                Amount = 4
+            }, {
+			
+               Material = "Base.Screws",
+                Amount = 25
+            }, {
+                Material = "Base.Money",
+                Amount = 1000
+            }, {
+                Material = "Base.BlowTorch",
+                Amount = 0,
+                Uses = 8
+            }},
+            skills = {{
+                Skill = "MetalWelding",
+                Amount = 3
+			}, {
+                Skill = "Electricity",
+                Amount = 3
+            }}
+        }
 end

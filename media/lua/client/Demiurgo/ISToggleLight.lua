@@ -4,10 +4,7 @@ require 'TimedActions/ISBaseTimedAction'
 ISToggleLight = ISBaseTimedAction:derive('ISToggleLight')
 
 function ISToggleLight:isValid()
-  if self.lightSource:getSquare():haveElectricity() or (SandboxVars.ElecShutModifier > -1 and GameTime:getInstance():getNightsSurvived() < SandboxVars.ElecShutModifier) or self.lightSource:isLightSourceOn() then
-    return true
-  end
-  return false
+  return true
 end
 
 function ISToggleLight:start()
@@ -21,7 +18,6 @@ function ISToggleLight:stop()
 end
 
 function ISToggleLight:perform()
-  print("aaaaaaaaaaaaaaaaaaaa")
   if instanceof(lightsource, "IsoThumpable") then
     if isClient() then
     --  local sq = self.lightSource:getSquare()
@@ -33,22 +29,14 @@ function ISToggleLight:perform()
       DemiurgoClientCommands.addPole(self.lightSource:getSquare())
       self.lightSource:toggleLightSource(not self.lightSource:isLightSourceOn())
     end
-    
-    
-    if self.lightSource:isLightSourceOn() then
-      self.lightSource:setSprite(modData["spriteOn"])
-    else
-      self.lightSource:setSprite(modData["spriteOff"])
-    end
   end
-  if self.lightSource:getModData()['UV'] then
-    local modData = self.lightSource:getModData()
-    if self.lightSource:isActivated() then
-      self.lightSource:setSprite(modData["spriteOff"])
-    else
-      self.lightSource:setSprite(modData["spriteOn"])
-    end
+  if self.lightSource:getSprite():getProperties():Val("GroupName") == "UV" then
+    self.lightSource:setSpriteFromName(GetOppositeSprite(self.lightSource:getSprite():getName()))
     self.lightSource:toggle()
+    self.lightSource:transmitUpdatedSpriteToServer();
+    if self.lightSource:isActivated() then
+        self.lightSource:addToWorld()
+    end
   end
   ISBaseTimedAction.perform(self)
 end
@@ -60,4 +48,18 @@ function ISToggleLight:new(character, lightSource, time)
   o.maxTime = time
   o.lightSource = lightSource
   return o
+end
+
+
+
+-- OVERWRITES --
+
+function ISLightActions:performRemoveLightBulb()
+  if self:isValidRemoveLightBulb() then
+  if self.lightswitch:getBulbItem() == "Demiurgo.LightBulbUV" and self.lightswitch:isActivated() then
+    self.lightswitch:setSpriteFromName(GetOppositeSprite(self.lightswitch:getSprite():getName()))
+    self.lightswitch:transmitUpdatedSpriteToServer();
+  end
+      self.lightswitch:removeLightBulb(self.character);
+  end
 end

@@ -16,26 +16,21 @@ ISLightContextMenu.doMenu = function(player, context, worldobjects, test)
       if not v:haveFuel() then
         if v:getModData()['IsLighting'] then
           thump = v
-          if v:getModData()['UV'] then
-            isUV = true
-          end
         end
       end
     end
-
-    if v:getModData()['UV'] then
+    if v:getSprite():getProperties():Val("GroupName") == "UV" then
       isUV = true
       lightSwitch = v
       print("ISUV TRUE")
     end
-
   end
 
   if test then
     return ISWorldObjectContextMenu.setTest()
   end
 
-  if isUV then
+  if isUV and not lightSwitch:hasLightBulb() then
     context:removeOptionByName(getText("ContextMenu_AddLightbulb"))
     local playerObj = getSpecificPlayer(player)
     local items = playerObj:getInventory():getAllEvalRecurse(function(item) return luautils.stringStarts(item:getType(), "LightBulbUV") end)
@@ -68,10 +63,15 @@ ISLightContextMenu.doMenu = function(player, context, worldobjects, test)
       context:addOption(getText 'ContextMenu_Turn_On', thump, ISLightContextMenu.onToggleThumpableLight, player)
     end
   elseif lightSwitch then
+    context:removeOptionByName(getText("ContextMenu_Remove_Battery"))
     if lightSwitch:isActivated() then
-      context:addOption(getText 'ContextMenu_Turn_Off', lightSwitch, ISLightContextMenu.onToggleIsoLightSwitch, player)      
-    elseif lightSwitch:getHasBattery() then 
-      context:addOption(getText 'ContextMenu_Turn_On', lightSwitch, ISLightContextMenu.onToggleIsoLightSwitch, player)
+      context:removeOptionByName(getText("ContextMenu_Turn_Off"))
+      context:removeOptionByName(getText("ContextMenu_RemoveLightbulb"))
+      context:insertOptionBefore(getText("ContextMenu_Walk_to"), getText 'ContextMenu_Turn_Off', lightSwitch, ISLightContextMenu.onToggleIsoLightSwitch, player)     
+    elseif lightSwitch:hasLightBulb() then
+      context:removeOptionByName(getText("ContextMenu_Turn_On"))
+      context:removeOptionByName(getText("ContextMenu_RemoveLightbulb"))
+      context:insertOptionBefore(getText("ContextMenu_Walk_to"), getText 'ContextMenu_Turn_On', lightSwitch, ISLightContextMenu.onToggleIsoLightSwitch, player)
     end
   end
 end
@@ -91,3 +91,6 @@ ISLightContextMenu.onToggleIsoLightSwitch = function(lightSwitch, player)
 end
 
 Events.OnFillWorldObjectContextMenu.Add(ISLightContextMenu.doMenu)
+
+
+-- OVERWRITES --

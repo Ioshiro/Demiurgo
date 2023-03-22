@@ -1420,7 +1420,10 @@ function DEMIInitContextMenu()
                             DEMI.BoxCardboard,
                             DEMI.BoxCardboardSmall,
                             DEMI.BoxCardboardBig,
-                            DEMI.BoxCardboardBroken
+                            DEMI.BoxCardboardBroken,
+                            DEMI.SafelockSmall,
+                            DEMI.SafelockMedium,
+                            DEMI.SafelockLarge
                         }
                     },
                     {
