@@ -138,6 +138,107 @@ module Demiurgo {
 		WorldObjectSprite	= la_resistenza_market_11,
 	}
 
+	item SpawnSign1
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello spawn,
+		WorldObjectSprite	= la_resistenza_market_38,
+	}
+
+	item SpawnSign2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello spawn,
+		WorldObjectSprite	= la_resistenza_market_39,
+	}
+
+	item SpawnSign3
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello spawn,
+		WorldObjectSprite	= la_resistenza_market_31,
+	}
+
+	item SpawnSign4
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello spawn,
+		WorldObjectSprite	= la_resistenza_market_30,
+	}
+
+	item LVSign1
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello LV,
+		WorldObjectSprite	= la_resistenza_market_26,
+	}
+
+	item LVSign2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello LV,
+		WorldObjectSprite	= la_resistenza_market_27,
+	}
+
+	item LVSign3
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello LV,
+		WorldObjectSprite	= la_resistenza_market_25,
+	}
+
+	item LVSign4
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello LV,
+		WorldObjectSprite	= la_resistenza_market_24,
+	}
+
+	item MuldSign1
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello Muld,
+		WorldObjectSprite	= la_resistenza_market_29,
+	}
+
+	item MuldSign2
+	{
+		DisplayCategory = Furniture,
+		Type			= Moveable,
+		Icon			= default,
+		Weight          	= 0.5,
+		DisplayName		= Cartello Muld,
+		WorldObjectSprite	= la_resistenza_market_28,
+	}
+
+
 
 	item Graffiti1
 	{
