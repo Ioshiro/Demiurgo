@@ -9,9 +9,6 @@ ISLightSourceUV = ISBuildingObject:derive("ISLightSourceUV");
 function ISLightSourceUV:create(x, y, z, north, sprite)
 	local cell = getWorld():getCell();
 	self.sq = cell:getGridSquare(x, y, z);
-	-- self.javaObject = IsoLightSwitch.new(cell, self.sq, sprite, north, self);
-	--self.javaObject = (IsoLightSwitch)IsoObject.new(cell, self.sq, sprite);
-	--self.javaObject = IsoObject.new(cell, self.sq, sprite);
 	self.javaObject = IsoLightSwitch.new(cell, self.sq, getSprite(sprite), self.sq:getRoomID());
 	self.javaObject:addLightSourceFromSprite();
 	self.javaObject:setUseBattery(true);
@@ -19,11 +16,7 @@ function ISLightSourceUV:create(x, y, z, north, sprite)
 	self.javaObject:setBulbItemRaw("Demiurgo.LightBulbUV")
 	self.javaObject:setPower(100)
 	self.javaObject:setDelta(0)
-	--self.javaObject:addLighBulb(self.character, "Demiurgo.LightBulbUV");
-	--self.javaObject:addLightSourceFromSprite()
-    --obj:getCustomSettingsFromItem(_item);
-	--buildUtil.setInfo(self.javaObject, self);
-	--self.javaObject:setModData(copyTable(self.modData));
+
     -- light stuff
     local offsetX = 0;
     local offsetY = 0;
