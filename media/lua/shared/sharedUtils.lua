@@ -1,10 +1,11 @@
 local OppositeSprites = {}
+-- lampione uv on/off
 OppositeSprites["la_resistenza_market_56"]="la_resistenza_market_57"
 OppositeSprites["la_resistenza_market_57"]="la_resistenza_market_56"
 OppositeSprites["la_resistenza_market_59"]="la_resistenza_market_58"
 OppositeSprites["la_resistenza_market_58"]="la_resistenza_market_59"
 
-
+-- safelock open/close
 OppositeSprites["la_resistenza_market_40"]="la_resistenza_market_42"
 OppositeSprites["la_resistenza_market_41"]="la_resistenza_market_43"
 OppositeSprites["la_resistenza_market_42"]="la_resistenza_market_40"
@@ -17,6 +18,8 @@ OppositeSprites["la_resistenza_market_48"]="la_resistenza_market_50"
 OppositeSprites["la_resistenza_market_49"]="la_resistenza_market_51"
 OppositeSprites["la_resistenza_market_50"]="la_resistenza_market_48"
 OppositeSprites["la_resistenza_market_51"]="la_resistenza_market_49"
+
+-- old safelock?
 OppositeSprites["la_resistenza_market_special_0"]="la_resistenza_market_special_2"
 OppositeSprites["la_resistenza_market_special_1"]="la_resistenza_market_special_3"
 OppositeSprites["la_resistenza_market_special_2"]="la_resistenza_market_special_0"

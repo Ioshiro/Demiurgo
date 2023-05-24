@@ -1568,7 +1568,16 @@ function DEMIInitContextMenu()
                         items = {
                             DEMI.LRMMailbox,
                             DEMI.LRMMarket,
-                            DEMI.LRMExpress
+                            DEMI.LRMExpress,
+                            DEMI.LRMMarketMedical,
+                            DEMI.LRMMarketMoney,
+                            DEMI.LRMMarketAmmo,
+                            DEMI.LRMMarketSurvival,
+                            DEMI.LRMMarketWeapon,
+                            DEMI.LRMMarketFood,
+                            DEMI.LRMMarketClothing,
+                            DEMI.LRMMarketBook,
+                            DEMI.LRMMarketCar
                         }
                     }
         }

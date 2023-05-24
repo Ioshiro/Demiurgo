@@ -2993,6 +2993,134 @@ function DEMI.InitFurnitureDefs()
         }
     }
 
+    DEMI.LRMMarketMedical = {
+        name = "Medical Market",
+        data = {
+            onBuild = DEMI.OnBuildSimpleFurniture,
+            recipe = DEMI.LRMRecipe,
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_0"
+            }
+        }
+    }
+
+    DEMI.LRMMarketMoney = {
+        name = "Money Market",
+        data = {
+            onBuild = DEMI.OnBuildSimpleFurniture,
+            recipe = DEMI.LRMRecipe,
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_4"
+            }
+        }
+    }
+
+    DEMI.LRMMarketAmmo = {
+        name = "Ammo Market",
+        data = {
+            onBuild = DEMI.OnBuildSimpleFurniture,
+            recipe = DEMI.LRMRecipe,
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_8"
+            }
+        }
+    }
+
+    DEMI.LRMMarketSurvival = {
+        name = "Survival Market",
+        data = {
+            onBuild = DEMI.OnBuildLRMDoubleTileFurniture,
+            recipe = DEMI.LRMRecipe,
+
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_16",
+                sprite2 = "la_resistenza_market_specifici_17",
+                northSprite = "la_resistenza_market_specifici_16",
+                northSprite2 = "la_resistenza_market_specifici_17"
+            }
+        }
+    }
+
+    DEMI.LRMMarketWeapon = {
+        name = "Weapon Market",
+        data = {
+            onBuild = DEMI.OnBuildLRMDoubleTileFurniture,
+            recipe = DEMI.LRMRecipe,
+
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_24",
+                sprite2 = "la_resistenza_market_specifici_25",
+                northSprite = "la_resistenza_market_specifici_24",
+                northSprite2 = "la_resistenza_market_specifici_25"
+            }
+        }
+    }
+
+    DEMI.LRMMarketClothing = {
+        name = "Clothing Market",
+        data = {
+            onBuild = DEMI.OnBuildLRMDoubleTileFurniture,
+            recipe = DEMI.LRMRecipe,
+
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_33",
+                sprite2 = "la_resistenza_market_specifici_34",
+                northSprite = "la_resistenza_market_specifici_33",
+                northSprite2 = "la_resistenza_market_specifici_34"
+            }
+        }
+    }
+
+    DEMI.LRMMarketBook = {
+        name = "Book Market",
+        data = {
+            onBuild = DEMI.OnBuildLRMDoubleTileFurniture,
+            recipe = DEMI.LRMRecipe,
+
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_40",
+                sprite2 = "la_resistenza_market_specifici_41",
+                northSprite = "la_resistenza_market_specifici_40",
+                northSprite2 = "la_resistenza_market_specifici_41"
+            }
+        }
+    }
+
+    DEMI.LRMMarketFood = {
+        name = "Food Market",
+        data = {
+            onBuild = DEMI.OnBuildLRMDoubleTileFurniture,
+            recipe = DEMI.LRMRecipe,
+
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_50",
+                sprite2 = "la_resistenza_market_specifici_51",
+                northSprite = "la_resistenza_market_specifici_50",
+                northSprite2 = "la_resistenza_market_specifici_51"
+            }
+        }
+    }
+
+    DEMI.LRMMarketCar = {
+        name = "Car Market",
+        data = {
+            onBuild = DEMI.OnBuildSimpleFurniture,
+            recipe = DEMI.LRMRecipe,
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_specifici_56"
+            }
+        }
+    }
+
     DEMI.SafelockSmall = {
         name = "Cassaforte Piccola",
         data = {
