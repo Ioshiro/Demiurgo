@@ -124,9 +124,7 @@ function DEMIInitRecipes()
         }, {
             Material = "Base.Pillow",
             Amount = 2
-        }, {
-            Material = "Base.Needle",
-            Amount = 1
+       
         }},
         skills = {{
             Skill = "Woodwork",
