@@ -19,7 +19,7 @@ ISLightContextMenu.doMenu = function(player, context, worldobjects, test)
         end
       end
     end
-    if v:getSprite():getProperties():Val("GroupName") == "UV" then
+    if v:getSprite() and v:getProperties() and v:getSprite():getProperties():Val("GroupName") == "UV" then
       isUV = true
       lightSwitch = v
       print("ISUV TRUE")
