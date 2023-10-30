@@ -220,10 +220,14 @@ function DEMI.InitDecorationDefs()
 
     DEMI.TrafficCone1 = {
         name = "Cono di Traffico 1",
+        
         data = {
             onBuild = DEMI.OnBuildSimpleFurniture,
             recipe = DEMI.SignRecipe,
             desc = "Non disassemblabile, non rimborsabile",
+            options = {
+                health = 50
+            },
             sprite = {
                 sprite = "street_decoration_01_26",
                 northSprite = "street_decoration_01_26",
@@ -239,6 +243,9 @@ function DEMI.InitDecorationDefs()
             onBuild = DEMI.OnBuildSimpleFurniture,
             recipe = DEMI.SignRecipe,
             desc = "Non disassemblabile, non rimborsabile",
+            options = {
+                health = 50
+            },
             sprite = {
                 sprite = "street_decoration_01_27",
                 northSprite = "street_decoration_01_27",
@@ -254,6 +261,9 @@ function DEMI.InitDecorationDefs()
             onBuild = DEMI.OnBuildSimpleFurniture,
             recipe = DEMI.SignRecipe,
             desc = "Non disassemblabile, non rimborsabile",
+            options = {
+                health = 50
+            },
             sprite = {
                 sprite = "construction_01_9",
                 northSprite = "construction_01_8",
@@ -269,6 +279,9 @@ function DEMI.InitDecorationDefs()
             onBuild = DEMI.OnBuildSimpleFurniture,
             recipe = DEMI.SignRecipe,
             desc = "Non disassemblabile, non rimborsabile",
+            options = {
+                health = 50
+            },
             sprite = {
                 sprite = "location_restaurant_spiffos_02_58",
                 northSprite = "location_restaurant_spiffos_02_59",
@@ -282,6 +295,9 @@ function DEMI.InitDecorationDefs()
         name = "Cartello Stop",
         data = {
             onBuild = DEMI.OnBuildSimpleFurniture,
+            options = {
+                health = 50
+            },
             recipe = DEMI.SignRecipe,
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -297,6 +313,9 @@ function DEMI.InitDecorationDefs()
         name = "Cartello in Vendità",
         data = {
             onBuild = DEMI.OnBuildSimpleFurniture,
+            options = {
+                health = 50
+            },
             recipe = DEMI.SignRecipe,
             desc = "Non disassemblabile, non rimborsabile",
             sprite = {
@@ -314,6 +333,7 @@ function DEMI.InitDecorationDefs()
             recipe = DEMI.WallDecorationRecipe,
             options = {
                 needToBeAgainstWall = true,
+                health = 50,
                 blockAllTheSquare = false,
                 renderFloorHelper = true,
                 canPassThrough = true,
@@ -334,6 +354,7 @@ function DEMI.InitDecorationDefs()
             recipe = DEMI.WallDecorationRecipe,
             options = {
                 needToBeAgainstWall = true,
+                health = 50,
                 blockAllTheSquare = false,
                 renderFloorHelper = true,
                 canPassThrough = true,
@@ -354,6 +375,7 @@ function DEMI.InitDecorationDefs()
             recipe = DEMI.WallDecorationRecipe,
             options = {
                 needToBeAgainstWall = true,
+                health = 50,
                 blockAllTheSquare = false,
                 renderFloorHelper = true,
                 canPassThrough = true,

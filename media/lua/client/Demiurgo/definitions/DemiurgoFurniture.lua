@@ -1606,6 +1606,7 @@ function DEMI.InitFurnitureDefs()
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.WoodenContainerRecipe,
 			options = {
+                health = 50,
                 containerType = "smallbox",
                 renderFloorHelper = true,
                 canBeAlwaysPlaced = true,
@@ -1628,6 +1629,7 @@ function DEMI.InitFurnitureDefs()
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.WoodenContainerRecipe,
             options = {
+                health = 50,
                 containerType = "bin",
                 renderFloorHelper = true,
                 canBeAlwaysPlaced = true,
@@ -1650,6 +1652,7 @@ function DEMI.InitFurnitureDefs()
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.WoodenContainerRecipe,
             options = {
+                health = 50,
                 containerType = "bin",
                 renderFloorHelper = true,
                 canBeAlwaysPlaced = true,
@@ -1668,6 +1671,7 @@ function DEMI.InitFurnitureDefs()
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.WoodenContainerRecipe,
             options = {
+                health = 50,
                 containerType = "smallbox",
                 renderFloorHelper = true,
                 canBeAlwaysPlaced = true,
@@ -1720,6 +1724,7 @@ function DEMI.InitFurnitureDefs()
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.WoodenContainerRecipe,
             options = {
+                health = 50,
                 containerType = "officedrawers",
                 renderFloorHelper = true,
                 canBeAlwaysPlaced = true,
