@@ -967,7 +967,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 4
         }}
     }
 
@@ -982,7 +982,7 @@ function DEMIInitRecipes()
         }},
         skills = {{
             Skill = "Woodwork",
-            Amount = 6
+            Amount = 4
         }}
     }
 
