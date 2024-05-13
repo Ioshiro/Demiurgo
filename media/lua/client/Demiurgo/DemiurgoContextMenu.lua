@@ -1558,7 +1558,8 @@ function DEMIInitContextMenu()
                             DEMI.LightPole2,
                             DEMI.LightPole3,
                             DEMI.LampEmergency,
-                            DEMI.LightPoleUV
+                            DEMI.LightPoleUV,
+                            DEMI.LightPoleDemi
                         }
                     }
                 }

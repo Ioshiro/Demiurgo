@@ -29,13 +29,13 @@ function ISLightSourceUV:create(x, y, z, north, sprite)
     elseif self.north then
         offsetY = -self.offsetY;
     end
-    local baseItem = self.character:getInventory():getFirstTypeRecurse(self.baseItem)
-    if not baseItem then
-        local itemsOnGround = buildUtil.getMaterialOnGround(self.sq)
-        baseItem = itemsOnGround[self.baseItem] and itemsOnGround[self.baseItem][1] or nil
-    end
+   -- local baseItem = self.character:getInventory():getFirstTypeRecurse(self.baseItem)
+    --if not baseItem then
+   --     local itemsOnGround = buildUtil.getMaterialOnGround(self.sq)
+    --    baseItem = itemsOnGround[self.baseItem] and itemsOnGround[self.baseItem][1] or nil
+    --end
 	buildUtil.consumeMaterial(self);
-	self.javaObject:getModData()["need:"..self.baseItem] = "1"
+	--self.javaObject:getModData()["need:"..self.baseItem] = "1"
 	self.javaObject:getModData()["UV"] = true
     self.sq:AddSpecialObject(self.javaObject);
 	self.javaObject:addToWorld();
