@@ -4,6 +4,8 @@ OppositeSprites["la_resistenza_market_56"]="la_resistenza_market_57"
 OppositeSprites["la_resistenza_market_57"]="la_resistenza_market_56"
 OppositeSprites["la_resistenza_market_59"]="la_resistenza_market_58"
 OppositeSprites["la_resistenza_market_58"]="la_resistenza_market_59"
+-- lampione demiurgo on/off
+OppositeSprites["la_resistenza_market_63"]="la_resistenza_market_63"
 
 -- safelock open/close
 OppositeSprites["la_resistenza_market_40"]="la_resistenza_market_42"

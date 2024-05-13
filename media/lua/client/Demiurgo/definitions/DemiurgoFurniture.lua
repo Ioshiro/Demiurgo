@@ -2934,6 +2934,27 @@ function DEMI.InitFurnitureDefs()
             }
         }
     }
+    DEMI.LightPoleDemi = {
+        name = "Lampione Demiurgo",
+        data = {
+            onBuild = DEMI.OnBuildLightSourceUV,
+            recipe = DEMI.LightPoleUVRecipe,
+            options = {
+                offsetX = 0,
+                offsetY = 0,
+                radius = 1,
+                modData = {
+                    IsLighting = true,
+                    UV = true
+                }
+            },
+            desc = "Tecnologie futuristiche offerte da Pynoshi srl",
+            sprite = {
+                sprite = "la_resistenza_market_63",
+                northSprite = "la_resistenza_market_63"
+            }
+        }
+    }
 
     DEMI.OvenGreen = {
         name = "Forno Verde",
