@@ -721,7 +721,7 @@ function DEMIInitRecipes()
         }, {
             Material = "Base.BucketConcreteFull",
             Amount = 0,
-	    Uses = 20
+	        Uses = 1
         }},
         skills = {{
             Skill = "Woodwork",

@@ -960,6 +960,9 @@ function DEMI.InitFurnitureDefs()
         data = {
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.CounterRecipe,
+			options = {
+					health = 9999
+					},
             sprite = {
                 sprite = "location_trailer_02_17",
                 northSprite = "location_trailer_02_18",
@@ -1285,6 +1288,9 @@ function DEMI.InitFurnitureDefs()
         data = {
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.CounterRecipe,
+			options = {
+					health = 9999
+					},
             sprite = {
                 sprite = "location_trailer_02_23",
                 northSprite = "location_trailer_02_22",
@@ -1298,6 +1304,9 @@ function DEMI.InitFurnitureDefs()
         data = {
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.CounterRecipe,
+				options = {
+					health = 9999
+					},
             sprite = {
                 sprite = "fixtures_counters_01_27",
                 northSprite = "fixtures_counters_01_25",
@@ -1814,7 +1823,7 @@ function DEMI.InitFurnitureDefs()
         }
     }
     DEMI.BoxCardboardBig = {
-        name = "Cassa di Cartone Grande",
+        name = "Cassa di legno",
         data = {
             onBuild = DEMI.OnBuildWoodenContainer,
             recipe = DEMI.WoodenContainerRecipe,
@@ -1826,8 +1835,8 @@ function DEMI.InitFurnitureDefs()
                 canBeLockedByPadlock = true
             },
             sprite = {
-                sprite = "furniture_storage_02_16",
-                northSprite = "furniture_storage_02_17"
+                sprite = "carpentry_01_16",
+                northSprite = "carpentry_01_16"
             }
         }
     }
