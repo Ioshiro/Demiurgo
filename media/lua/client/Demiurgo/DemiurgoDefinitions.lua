@@ -7,11 +7,7 @@ local DEMI = getDEMIInstance()
 function DEMIInitDefinitions()
     DEMI.Tools = {
         Hammer = {
-            "Base.Hammer",
-            "Base.HammerStone",
-            "Base.BallPeenHammer",
-            "Base.WoodenMallet",
-            "Base.ClubHammer"
+            "Base.HammerStone"
         },
         Screwdriver = {
             "Base.Screwdriver"

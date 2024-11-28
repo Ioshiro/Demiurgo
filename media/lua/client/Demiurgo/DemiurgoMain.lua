@@ -84,18 +84,22 @@ DEMI.getBestTools = function(player, tool)
 end
 
 DEMI.hasHammer = function(player)
-    -- pretend the user has a tool if the build menu is in cheat mode
-    if ISBuildMenu.cheat then
+    -- Check if the player is holding a Base.HammerStone
+    local heldItem = getSpecificPlayer(player):getPrimaryHandItem()
+    if heldItem and heldItem:getType() == "Base.HammerStone" then
         return true
     end
 
+    -- Check if the player has a Base.HammerStone in their inventory
     local inv = getSpecificPlayer(player):getInventory()
     for _, type in pairs(DEMI.Tools.Hammer) do
-        local exists = inv:containsTypeEvalRecurse(type, predicateNotBroken)
+        local exists = inv:contains(type)
         if exists then
             return true
         end
     end
+
+    return false
 end
 
 DEMI.equipToolPrimary = function(object, player, tool)
